@@ -10,5 +10,12 @@ module.exports = {
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off"
+  },
+  globals: {
+    ref: true,
+    reactive: true,
+    onMounted: true,
+    computed: true,
+    useRoute: true
   }
 };
