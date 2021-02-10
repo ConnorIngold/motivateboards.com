@@ -7,7 +7,7 @@
 </template>
 
 <script>
-	import { ref, onMounted } from 'vue'
+	import { ref } from 'vue'
 	import { useRoute } from 'vue-router'
 	import Login from '../../components/auth/Login'
 	import Register from '../../components/auth/Register'
@@ -24,9 +24,9 @@
 					data.value = 2
 				}
 			}
-			onMounted(() => {
-				pageCheck()
-			})
+
+			pageCheck()
+
 			return { Login, Register, ResetPassword, data }
 		},
 	}
